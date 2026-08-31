@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Edit Restaurant - DineHub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <h1>DineHub</h1>
+
+            <p class="owner-label">Restaurant Owner</p>
+
+            <nav>
+
+                <a href="owner-dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="my-restaurant.html" class="active">
+                    My Restaurant
+                </a>
+
+                <a href="menu.html">
+                    Menu
+                </a>
+
+                <a href="orders.html">
+                    Orders
+                </a>
+
+                <a href="reservations.html">
+                    Reservations
+                </a>
+
+                <a href="owner-profile.html">
+                    Profile
+                </a>
+
+            </nav>
+
+            <a href="login.html" class="logout">
+                Logout
+            </a>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <header class="dashboard-header">
+
+                <div>
+                    <h2>Edit Restaurant</h2>
+                    <p>Update your restaurant information.</p>
+                </div>
+
+            </header>
+
+
+            <!-- Edit Restaurant Form -->
+
+            <section class="form-card">
+
+                <form>
+
+                    <label for="restaurant-name">
+                        Restaurant Name
+                    </label>
+
+                    <input type="text"
+                           id="restaurant-name"
+                           name="restaurant-name"
+                           value="Spice Garden"
+                           required>
+
+
+                    <label for="cuisine">
+                        Cuisine
+                    </label>
+
+                    <input type="text"
+                           id="cuisine"
+                           name="cuisine"
+                           value="Kerala & Indian Cuisine"
+                           required>
+
+
+                    <label for="description">
+                        Description
+                    </label>
+
+                    <textarea id="description"
+                              name="description"
+                              rows="4"
+                              required>
+Authentic Kerala and Indian dishes made with fresh ingredients.
+                    </textarea>
+
+
+                    <label for="address">
+                        Restaurant Address
+                    </label>
+
+                    <textarea id="address"
+                              name="address"
+                              rows="3"
+                              required>
+Kochi, Kerala, India
+                    </textarea>
+
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input type="tel"
+                           id="phone"
+                           name="phone"
+                           value="+91 98765 43210"
+                           required>
+
+
+                    <label for="opening-time">
+                        Opening Time
+                    </label>
+
+                    <input type="time"
+                           id="opening-time"
+                           name="opening-time"
+                           value="10:00"
+                           required>
+
+
+                    <label for="closing-time">
+                        Closing Time
+                    </label>
+
+                    <input type="time"
+                           id="closing-time"
+                           name="closing-time"
+                           value="22:00"
+                           required>
+
+
+                    <label for="restaurant-image">
+                        Change Restaurant Image
+                    </label>
+
+                    <input type="file"
+                           id="restaurant-image"
+                           name="restaurant-image"
+                           accept="image/*">
+
+
+                    <div class="form-buttons">
+
+                        <a href="my-restaurant.html"
+                           class="cancel-button">
+                            Cancel
+                        </a>
+
+                        <button type="submit">
+                            SAVE CHANGES
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

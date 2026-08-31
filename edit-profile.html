@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Edit Profile - DineHub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <h1>DineHub</h1>
+
+            <p class="owner-label">Restaurant Owner</p>
+
+            <nav>
+
+                <a href="owner-dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="my-restaurant.html">
+                    My Restaurant
+                </a>
+
+                <a href="menu.html">
+                    Menu
+                </a>
+
+                <a href="orders.html">
+                    Orders
+                </a>
+
+                <a href="reservations.html">
+                    Reservations
+                </a>
+
+                <a href="owner-profile.html" class="active">
+                    Profile
+                </a>
+
+            </nav>
+
+            <a href="login.html" class="logout">
+                Logout
+            </a>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <header class="dashboard-header">
+
+                <div>
+                    <h2>Edit Profile</h2>
+                    <p>Update your account information.</p>
+                </div>
+
+            </header>
+
+
+            <!-- Edit Profile Form -->
+
+            <section class="form-card">
+
+                <form>
+
+                    <label for="name">Full Name</label>
+
+                    <input type="text"
+                           id="name"
+                           name="name"
+                           value="Ananya"
+                           required>
+
+
+                    <label for="email">Email</label>
+
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           value="ananya@gmail.com"
+                           required>
+
+
+                    <label for="phone">Phone Number</label>
+
+                    <input type="tel"
+                           id="phone"
+                           name="phone"
+                           value="+91 98765 43210"
+                           required>
+
+
+                    <label for="password">New Password</label>
+
+                    <input type="password"
+                           id="password"
+                           name="password"
+                           placeholder="Enter new password">
+
+
+                    <label for="confirm-password">
+                        Confirm New Password
+                    </label>
+
+                    <input type="password"
+                           id="confirm-password"
+                           name="confirm-password"
+                           placeholder="Confirm new password">
+
+
+                    <div class="form-buttons">
+
+                        <a href="owner-profile.html"
+                           class="cancel-button">
+                            Cancel
+                        </a>
+
+                        <button type="submit">
+                            SAVE CHANGES
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

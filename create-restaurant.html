@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Restaurant - DineHub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <div class="login-box">
+
+            <h1>DineHub</h1>
+
+            <p class="tagline">Your Restaurant, Your Choice</p>
+
+            <h2>Create Your Restaurant</h2>
+
+            <form>
+
+                <label for="restaurant-name">Restaurant Name</label>
+                <input type="text"
+                       id="restaurant-name"
+                       name="restaurant-name"
+                       placeholder="Enter restaurant name"
+                       required>
+
+                <label for="description">Restaurant Description</label>
+                <textarea id="description"
+                          name="description"
+                          placeholder="Tell customers about your restaurant"
+                          rows="4"
+                          required></textarea>
+
+                <label for="cuisine">Cuisine Type</label>
+                <select id="cuisine" name="cuisine" required>
+
+                    <option value="">Select cuisine type</option>
+                    <option value="indian">Indian</option>
+                    <option value="chinese">Chinese</option>
+                    <option value="italian">Italian</option>
+                    <option value="mexican">Mexican</option>
+                    <option value="arabic">Arabic</option>
+                    <option value="continental">Continental</option>
+                    <option value="other">Other</option>
+
+                </select>
+
+                <label for="address">Restaurant Address</label>
+                <textarea id="address"
+                          name="address"
+                          placeholder="Enter complete restaurant address"
+                          rows="3"
+                          required></textarea>
+
+                <label for="restaurant-phone">Restaurant Phone Number</label>
+                <input type="tel"
+                       id="restaurant-phone"
+                       name="restaurant-phone"
+                       placeholder="Enter restaurant phone number"
+                       required>
+
+                <label for="opening-time">Opening Time</label>
+                <input type="time"
+                       id="opening-time"
+                       name="opening-time"
+                       required>
+
+                <label for="closing-time">Closing Time</label>
+                <input type="time"
+                       id="closing-time"
+                       name="closing-time"
+                       required>
+
+                <label for="restaurant-image">Restaurant Image</label>
+                <input type="file"
+                       id="restaurant-image"
+                       name="restaurant-image"
+                       accept="image/*">
+
+                <button type="submit">CREATE RESTAURANT</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

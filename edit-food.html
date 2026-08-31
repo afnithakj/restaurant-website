@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Edit Food - DineHub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <h1>DineHub</h1>
+
+            <p class="owner-label">Restaurant Owner</p>
+
+            <nav>
+
+                <a href="owner-dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="my-restaurant.html">
+                    My Restaurant
+                </a>
+
+                <a href="menu.html" class="active">
+                    Menu
+                </a>
+
+                <a href="orders.html">
+                    Orders
+                </a>
+
+                <a href="reservations.html">
+                    Reservations
+                </a>
+
+                <a href="owner-profile.html">
+                    Profile
+                </a>
+
+            </nav>
+
+            <a href="login.html" class="logout">
+                Logout
+            </a>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <header class="dashboard-header">
+
+                <div>
+                    <h2>Edit Food Item</h2>
+                    <p>Update the details of your menu item.</p>
+                </div>
+
+            </header>
+
+
+            <!-- Edit Food Form -->
+
+            <section class="form-card">
+
+                <form>
+
+                    <label for="food-name">Food Name</label>
+
+                    <input type="text"
+                           id="food-name"
+                           name="food-name"
+                           value="Chicken 65"
+                           required>
+
+
+                    <label for="category">Category</label>
+
+                    <select id="category"
+                            name="category"
+                            required>
+
+                        <option value="starter" selected>Starter</option>
+                        <option value="main-course">Main Course</option>
+                        <option value="dessert">Dessert</option>
+                        <option value="beverage">Beverage</option>
+
+                    </select>
+
+
+                    <label for="description">Description</label>
+
+                    <textarea id="description"
+                              name="description"
+                              rows="4"
+                              required>Crispy and spicy fried chicken served with onions and lemon.</textarea>
+
+
+                    <label for="price">Price</label>
+
+                    <input type="number"
+                           id="price"
+                           name="price"
+                           value="180"
+                           min="0"
+                           step="0.01"
+                           required>
+
+
+                    <label for="food-image">Change Food Image</label>
+
+                    <input type="file"
+                           id="food-image"
+                           name="food-image"
+                           accept="image/*">
+
+
+                    <label class="availability">
+
+                        <input type="checkbox"
+                               name="available"
+                               checked>
+
+                        Food is currently available
+
+                    </label>
+
+
+                    <div class="form-buttons">
+
+                        <a href="menu.html" class="cancel-button">
+                            Cancel
+                        </a>
+
+                        <button type="submit">
+                            SAVE CHANGES
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
